@@ -203,4 +203,14 @@ The recording and segment-upload process should be checked if this error occurs 
 
 ## License
 
-Choose and add a license before distributing this project publicly. If you intend to accept contributions or allow reuse, consider adding an appropriate open-source license.
+This project is licensed under the **MIT License**.
+
+You are free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of this software, subject to the conditions of the MIT License.
+
+See the [LICENSE](LICENSE) file for the complete license text.
+
+### Third-Party Software
+
+This project uses third-party software and libraries, including Faster-Whisper, Flask, and PyAV. These components are distributed under their respective licenses.
+
+Their licenses and terms remain separate from this project's MIT License.
