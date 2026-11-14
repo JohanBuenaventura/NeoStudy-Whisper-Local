@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "NeoStudy Helper - Local Whisper",
+  "version": "2.0.0",
+  "description": "2x video speed and local tab-audio transcription using Whisper.",
+  "permissions": ["tabCapture", "offscreen", "storage", "activeTab"],
+  "host_permissions": [
+    "https://neostudyonline.com/*",
+    "https://*.neostudyonline.com/*",
+    "http://127.0.0.1:8765/*"
+  ],
+  "background": {"service_worker": "background.js"},
+  "action": {"default_title": "Start/stop NeoStudy audio transcription"},
+  "content_scripts": [{
+    "matches": [
+      "https://neostudyonline.com/*",
+      "https://*.neostudyonline.com/*"
+    ],
+    "js": ["content.js"],
+    "run_at": "document_idle"
+  }]
+}
